@@ -1,0 +1,19 @@
+@{
+  ViewData["Title"] = "Details";
+}
+
+<hi>Animal Info:</hi>
+<ul>
+  <li>ID: @Model.AnimalId</li>
+  <li>Name: @Model.Name</li>
+  <li>Species: @Model.Species</li>
+  <li>Gender: @Model.Gender</li>
+</ul>
+<br>
+
+<a href="/Animals/Edit/@(Model.AnimalId)"><p>Edit</p></a>
+<br>
+
+<a href="/Animals"><p>Return</p></a>
+
+<a href="/Animals/Delete/@Model.AnimalId)"><p>Delete Animal</p></a>
