@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using CretaceousClient.Models;
 
@@ -16,12 +16,12 @@ namespace CretaceousClient.Controllers
       return View(allAnimals);
     }
 
-    [HttpPost]
+    /*[HttpPost]
     public IActionResult Index(Animal animal)
     {
       Animal.Post(animal);
       return RedirectToAction("Index");
-    }
+    }*/
 
     public IActionResult Details(int id)
     {
