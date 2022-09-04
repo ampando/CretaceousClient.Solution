@@ -16,12 +16,12 @@ namespace CretaceousClient.Controllers
       return View(allAnimals);
     }
 
-    /*[HttpPost]
+    [HttpPost]
     public IActionResult Index(Animal animal)
     {
       Animal.Post(animal);
       return RedirectToAction("Index");
-    }*/
+    }
 
     public IActionResult Details(int id)
     {
@@ -46,7 +46,7 @@ namespace CretaceousClient.Controllers
     public IActionResult Delete(int id)
     {
       Animal.Delete(id);
-      return RedirectToAction("Index");
+      return RedirectToAction("Delete", id);
     }
   }
 }
