@@ -46,7 +46,7 @@ namespace CretaceousClient.Controllers
     public IActionResult Delete(int id)
     {
       Animal.Delete(id);
-      return RedirectToAction("Delete", id);
+      return RedirectToAction("Index");
     }
   }
 }
